@@ -1,5 +1,5 @@
 Mechanic's Name: <%= @mechanic.name %><br>
 Years of Experience: <%= @mechanic.years_experience %><br>
-Rides: <% @mechanic.rides.list_by_thrills.each do |ride| %>
+Rides: <% @mechanic.rides.find_open_rides.list_by_thrills.each do |ride| %>
 <%= ride.name %>
 <% end %>

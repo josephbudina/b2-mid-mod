@@ -17,6 +17,6 @@ describe 'mechanics show page' do
     expect(page).to have_content("Spinner")
     expect(page).to have_content("Tea Cups")
     expect("Spinner").to appear_before("Tea Cups")
-    expect(page).to_not have_content("Spinner")
+    expect(page).to_not have_content("Fast Boi")
   end
 end
