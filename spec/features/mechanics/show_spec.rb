@@ -28,6 +28,5 @@ describe 'mechanics show page' do
     click_on 'Submit'
     expect(current_path).to eq("/mechanics/#{@mechanic_1.id}")
     expect("Boat").to appear_before("Spinner")
-    save_and_open_page
   end
 end

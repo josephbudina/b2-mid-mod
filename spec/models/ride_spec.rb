@@ -3,6 +3,8 @@ RSpec.describe Ride, type: :model do
   describe 'relationships' do
     it { should have_many :ride_mechanics}
     it { should have_many(:mechanics).through(:ride_mechanics)}
+    it { should have_many :park_rides}
+    it { should have_many(:parks).through(:park_rides)}
   end
 
   describe "Class Methods" do
