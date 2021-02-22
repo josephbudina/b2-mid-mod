@@ -17,4 +17,10 @@ describe 'mechanics index page' do
     expect(page).to have_content('Jim')
     expect(page).to have_content('4')
   end
+
+  it 'shows average experience of all mechanics' do
+    visit '/mechanics'
+    expect(page).to have_content("Average years of experience")
+    expect(page).to have_content("6")
+  end
 end
